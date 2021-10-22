@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="navContent">
+                <div id="navLeft">
+                    <h1 class="navText">DojoWeather</h1>
+                </div>
+                <div id="navRight">
+                    <h2 class="navText" onclick="alert('Loading weather report...')">New York</h2>
+                    <h2 class="navText" onclick="alert('Loading weather report...')">Los Angeles</h2>
+                    <h2 class="navText" onclick="alert('Loading weather report...')">Denver</h2>
+                </div>
+            </div>
+        </div>
+        <div id="container2">
+            <div id="hero">
+                <div id="heroContent">
+                    <div id="heroLeft">
+                        <h2>New York</h2>
+                    </div>
+                    <div id="heroRight">
+                        <p>Show temperature in</p>
+                        <div id="heroRightTemp">
+                            <select name="" onchange="convert(this)">
+                            <option value="1">°C</option>
+                            <option value="2">°F</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><hr/></div>
+            <div id="forecast">
+                <div id="columns">
+                    <div class="col">
+                        <div class="colContent">
+                            <h3 class="h3Day">Today</h3>
+                            <img class="forecastImg" src="Assets/some_rain.png" alt="Rain">
+                            <p class="pForecast">Some Rain</p>
+                            <div class="temp">
+                                <h4 class="red" id="temp1">24</h4>
+                                <h4 class="blue" id="temp2">18</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="colContent">
+                            <h3 class="h3Day">Tomorrow</h3>
+                            <img class="forecastImg" src="Assets/some_sun.png" alt="Sun">
+                            <p class="pForecast">Some Sun</p>
+                            <div class="temp">
+                                <h4 class="red" id="temp3">27</h4>
+                                <h4 class="blue" id="temp4">19</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="colContent">
+                            <h3 class="h3Day">Friday</h3>
+                            <img class="forecastImg" src="Assets/some_clouds.png" alt="Clouds">
+                            <p class="pForecast">Some Clouds</p>
+                            <div class="temp">
+                                <h4 class="red" id="temp5">21</h4>
+                                <h4 class="blue" id="temp6">16</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="colContent">
+                            <h3 class="h3Day">Saturday</h3>
+                            <img class="forecastImg" src="Assets/some_sun.png" alt="Sun">
+                            <p class="pForecast">Some Sun</p>
+                            <div class="temp">
+                                <h4 class="red" id="temp7">26</h4>
+                                <h4 class="blue" id="temp8">21</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cookie" id="remove">
+                <div id="cookieInner">
+                    <h3 id="h3Cookie">Stop! Cookie Time</h3>
+                        <div id="cookieBot">
+                            <img src="Assets/cookie.png" alt="Cookie">
+                            <p id="pCookie">We use cookies (sadly not the edible kind) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="">Read more...</a></p>
+                            <button id="acceptBtn" onclick="hide(remove)">I Accept</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
